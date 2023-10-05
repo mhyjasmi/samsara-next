@@ -1,3 +1,4 @@
 node_modules
 amplifyconfiguration.js
 cdk.out
+.next

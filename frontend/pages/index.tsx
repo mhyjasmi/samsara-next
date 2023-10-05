@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useEffect, useState} from 'react';
+import React, { useEffect, useState} from 'react';
 import { Amplify, API } from 'aws-amplify';
 import { Authenticator } from "@aws-amplify/ui-react";
 import '@aws-amplify/ui-react/styles.css';
@@ -61,7 +61,7 @@ return (
 }
  
 
-const Home: NextPage = ({ data }) => {
+const Home: NextPage = () => {
   return (
     <Authenticator>
       {({ signOut, user }) => (
