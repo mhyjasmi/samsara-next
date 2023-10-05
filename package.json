@@ -11,8 +11,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@aws-amplify/ui-react": "^0.0.0-next-ad79ed7-20231004075829",
-    "aws-amplify": "^5.3.12-api-v6-models.5d6fe9b.0"
+    "@aws-amplify/ui-react": "^5.0.7",
+    "aws-amplify": "^5.3.11"
   },
   "devDependencies": {
     "@aws-amplify/amplify-api-next-alpha": "^0.3.2",
