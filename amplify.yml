@@ -1,0 +1,23 @@
+version: 1
+backend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    build:
+      commands:
+        - npm ci
+        - npx amplify pipeline-deploy --branch $AWS_BRANCH --appId $AWS_APP_ID
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands: []
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: ./frontend/.next
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

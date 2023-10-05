@@ -4,12 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npm run dev --workspaces --if-present"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@aws-amplify/ui-react": "^0.0.0-next-ad79ed7-20231004075829",
     "aws-amplify": "^5.3.12-api-v6-models.5d6fe9b.0"
   },
   "devDependencies": {
@@ -18,5 +20,8 @@
     "@aws-amplify/backend-auth": "^0.2.0-alpha.6",
     "@aws-amplify/backend-cli": "^0.2.0-alpha.6",
     "@aws-amplify/backend-graphql": "^0.2.0-alpha.6"
-  }
+  },
+  "workspaces": [
+    "frontend"
+  ]
 }
